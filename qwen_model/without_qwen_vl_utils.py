@@ -7,9 +7,9 @@ from transformers import Qwen2VLForConditionalGeneration, AutoTokenizer, AutoPro
 
 # Load the model in half-precision on the available device(s)
 model = Qwen2VLForConditionalGeneration.from_pretrained(
-    "Qwen2-VL-2B-Instruct", torch_dtype="auto", device_map="auto"
+    "../Qwen2-VL-2B-Instruct", torch_dtype="auto", device_map="auto"
 )
-processor = AutoProcessor.from_pretrained("Qwen2-VL-2B-Instruct")
+processor = AutoProcessor.from_pretrained("../Qwen2-VL-2B-Instruct")
 
 print(model.device)
 

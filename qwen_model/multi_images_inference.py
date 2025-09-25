@@ -3,10 +3,10 @@ from qwen_vl_utils import process_vision_info
 
 # default: Load the model on the available device(s)
 model = Qwen2VLForConditionalGeneration.from_pretrained(
-    "Qwen2-VL-2B-Instruct", torch_dtype="auto", device_map="auto"
+    "../Qwen2-VL-2B-Instruct", torch_dtype="auto", device_map="auto"
 )
 
-processor = AutoProcessor.from_pretrained("Qwen2-VL-2B-Instruct")
+processor = AutoProcessor.from_pretrained("../Qwen2-VL-2B-Instruct")
 
 messages = [
     {
